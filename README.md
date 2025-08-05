@@ -18,10 +18,6 @@ A modern FastAPI project template with async SQLAlchemy, Alembic migrations, JWT
 ## Setup Instructions
 
 ### 1. Clone the repository
-```bash
-git clone <your-repo-url>
-cd fastapi-template
-```
 
 ### 2. Create and activate a virtual environment
 ```bash
@@ -43,7 +39,7 @@ docker compose up -d postgres
 ```
 
 ### 5. Configure environment variables
-Edit `.env` for database and JWT settings:
+Edit `.env` for database and JWT settings, you can visit my `JWT Secret Generator` at this url: [JWT Secret Generator](https://bngiahuy.github.io/jwt-secret-generator/)
 ```
 PG_HOST=localhost
 PG_PORT=5432
@@ -55,6 +51,8 @@ JWT_SECRET=supersecretkey
 JWT_ALGORITHM=HS256
 JWT_EXPIRE_MINUTES=30
 ```
+
+
 
 ### 6. Run Alembic migrations
 ```bash
